@@ -1,3 +1,9 @@
+import myClv from "./images/clv.png";
+import myMud from "./images/mud.jpg";
+import myCalci from "./images/calci.png";
+import myDice from "./images/dice.png";
+import myStar from "./images/starubcks.png";
+import myRealtime from "./images/realtime.png";
 export const skills = {
   'Programming Languages': [
     'C',
@@ -56,7 +62,7 @@ export const projects = [
   {
     title: 'Malicious URL Detection',
     description: 'Developed a machine learning model to detect malicious URLs using Python.',
-    image: '/images/mud.jpg',
+    image: {myMud},
     technologies: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'REST API'],
     features: [
       'Data Collection & Preprocessing: Gathered and cleaned a dataset of URLs.',
@@ -82,7 +88,7 @@ export const projects = [
   {
     title: 'Customer Lifetime Value Prediction',
     description: 'Developed a machine learning model to predict Customer Lifetime Value, enabling businesses to estimate future revenues.',
-    image: '/images/clv.jpg',
+    image: {myClv},
     technologies: ['Python', 'Scikit-learn', 'Pandas', 'Regression Analysis', 'Data Visualization'],
     github: 'https://github.com/MdSaad07/Customer-Lifetime-Value-Prediction',
   },
@@ -110,14 +116,14 @@ export const projects = [
   {
     title: 'Calculator',
     description: 'Designed an intuitive user interface with HTML5 and CSS, ensuring a visually appealing and responsive layout.',
-    image: '/images/calculator.png',
+    image: {myCalci},
     technologies: ['HTML5', 'CSS', 'JavaScript'],
     github: 'https://github.com/MdSaad07/Calculator',
   },
   {
     title: 'Burger Kings Landing Page',
     description: 'Developed a responsive and visually engaging landing page for Burger King using HTML5 and CSS.',
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&h=400&fit=crop',
+    image: '{myBurger}',
     technologies: ['HTML5', 'CSS'],
     github: 'https://github.com/MdSaad07/Burger-King',
   },
