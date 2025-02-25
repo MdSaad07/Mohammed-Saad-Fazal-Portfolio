@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import saadImage from "../src/images/saad.png"
 
 import {
   Github,
@@ -195,7 +196,7 @@ function App() {
                   <div className="relative group">
                     <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                     <img
-                      src="../saad.png"
+                      src={saadImage}
                       alt="Profile"
                       className="relative rounded-full w-48 h-48 md:w-64 md:h-64 object-cover mx-auto transform group-hover:scale-105 transition duration-200"
                     />
