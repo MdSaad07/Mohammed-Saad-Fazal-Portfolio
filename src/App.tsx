@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
+import myImage from "../images/saad.png";
+
 import {
   Github,
   Linkedin,
   Mail,
   Phone,
   Download,
-  ExternalLink,
+  // ExternalLink,
   MapPin,
   Calendar,
   Briefcase,
@@ -13,14 +15,7 @@ import {
   Award,
 } from "lucide-react";
 import { ThemeToggle } from "./components/ThemeToggle";
-import {
-  projects,
-  skills,
-  experience,
-  education,
-  hackathons,
-  testimonials,
-} from "./data";
+import { projects, skills, experience, education } from "./data";
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -128,7 +123,10 @@ function App() {
                   <Download className="mr-2" size={20} />
                   Download Resume
                 </a>
-                <ThemeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+                <ThemeToggle
+                  darkMode={darkMode}
+                  toggleDarkMode={toggleDarkMode}
+                />
               </div>
             </div>
           </nav>
@@ -185,7 +183,7 @@ function App() {
                     </a>
                     <a
                       href="tel:+918296712616"
-                     className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors dark:text-white dark:hover:text-blue-400 dark:hover:animate-bounce hover:animate-bounce"
+                      className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors dark:text-white dark:hover:text-blue-400 dark:hover:animate-bounce hover:animate-bounce"
                     >
                       <Phone
                         className="transform hover:scale-110 transition-transform"
@@ -198,7 +196,7 @@ function App() {
                   <div className="relative group">
                     <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                     <img
-                      src="saad.png"
+                      src={myImage}
                       alt="Profile"
                       className="relative rounded-full w-48 h-48 md:w-64 md:h-64 object-cover mx-auto transform group-hover:scale-105 transition duration-200"
                     />
@@ -323,20 +321,21 @@ function App() {
                           {edu.duration}
                           <span className="mx-2">•</span>
                           <Award size={16} className="mr-2" />
-                          CGPA/Percentage:{" "}
-                          {edu.percent ? edu.percent : edu.cgpa}
+                          CGPA/Percentage: {edu.cgpa}
                         </div>
 
-                        <div className="flex flex-wrap gap-2 ">
-                          {edu.courses.map((course, i) => (
-                            <span
-                              key={i}
-                              className="px-3 py-1 text-sm rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:hover:bg-purple-900/70 hover:bg-purple-500/70 dark:hover:bg-purple-100/70 dark:text-purple-100"
-                            >
-                              {course}
-                            </span>
-                          ))}
-                        </div>
+                        {edu.courses && edu.courses.length > 0 && (
+                          <div className="flex flex-wrap gap-2">
+                            {edu.courses.map((course, i) => (
+                              <span
+                                key={i}
+                                className="px-3 py-1 text-sm rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:hover:bg-purple-900/70 hover:bg-purple-500/70 dark:hover:bg-purple-100/70 dark:text-purple-100"
+                              >
+                                {course}
+                              </span>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -346,52 +345,59 @@ function App() {
           </section>
 
           <section
-  id="projects"
-  className="py-16 px-6 bg-white/30 dark:bg-gray-800/30 backdrop-blur-sm"
->
-  <div className="container mx-auto max-w-4xl">
-    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-      Projects
-    </h2>
-    <div className="relative overflow-hidden ">
-      <div className="flex space-x-6 overflow-x-scroll scrollbar-hide snap-x" id="projectSlider">
-        {projects.map((project, index) => (
-          <div
-            key={project.title}
-            className="p-6 rounded-lg bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 min-w-[300px] snap-center dark:hover:bg-blue-900/70 hover:bg-blue-100/70"
+            id="projects"
+            className="py-16 px-6 bg-white/30 dark:bg-gray-800/30 backdrop-blur-sm"
           >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-40  object-cover rounded-lg mb-4"
-            />
-            <h3 className="text-xl font-semibold mb-2 dark:text-white">{project.title}</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
-            <div className="flex flex-wrap gap-2 mb-4">
-              {project.technologies.map((tech) => (
-                <span
-                  key={tech}
-                  className="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-600/70 hover:bg-blue-600/70 text-blue-800 dark:text-blue-100 hover:scale-105 transition-transform"
+            <div className="container mx-auto max-w-4xl">
+              <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Projects
+              </h2>
+              <div className="relative overflow-hidden">
+                <div
+                  className="flex space-x-6 overflow-x-scroll scrollbar-hide snap-x"
+                  id="projectSlider"
                 >
-                  {tech}
-                </span>
-              ))}
-            </div>
-            <div className="flex gap-4">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 dark:text-blue-400 hover:underline"
-              >
-                GitHub
-              </a>
-             
-            </div>
-          </div>
-        ))}
-      </div>
-      <button
+                  {projects.map((project) => (
+                    <div
+                      key={project.title}
+                      className="p-6 rounded-lg bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 min-w-[300px] snap-center dark:hover:bg-blue-900/70 hover:bg-blue-100/70"
+                    >
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-40 object-cover rounded-lg mb-4"
+                        loading="lazy"
+                      />
+                      <h3 className="text-xl font-semibold mb-2 dark:text-white">
+                        {project.title}
+                      </h3>
+                      <p className="text-gray-700 dark:text-gray-300 mb-4">
+                        {project.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.technologies.map((tech) => (
+                          <span
+                            key={tech}
+                            className="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-600/70 hover:bg-blue-600/70 text-blue-800 dark:text-blue-100 hover:scale-105 transition-transform"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="flex gap-4">
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 dark:text-blue-400 hover:underline"
+                        >
+                          GitHub
+                        </a>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <button
         className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800/50  fa-2x text-white p-2 rounded-full shadow-lg hover:bg-gray-900/70"
         onClick={() => document.getElementById('projectSlider').scrollBy({ left: -300, behavior: 'smooth' })}
       >
@@ -403,13 +409,10 @@ function App() {
       >
         ▶
       </button>
-    </div>
-    
-  </div>
-</section>
-
-
-
+              </div>
+              
+            </div>
+          </section>
 
           {/* <section
             id="testimonials"
@@ -479,7 +482,9 @@ function App() {
                     </div>
                   </div>
                   <div className="mt-6">
-                    <h4 className="font-semibold mb-3 dark:text-white">Connect with me</h4>
+                    <h4 className="font-semibold mb-3 dark:text-white">
+                      Connect with me
+                    </h4>
                     <div className="flex space-x-4">
                       <a
                         href="https://github.com/MdSaad07"
