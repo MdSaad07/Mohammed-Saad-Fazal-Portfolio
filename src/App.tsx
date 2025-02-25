@@ -116,7 +116,7 @@ function App() {
                   Contact
                 </a>
                 <a
-                  href="/Mohammed_Saad_Fazal-RESUME.pdf"
+                  href="https://drive.google.com/file/d/1LuGrLdfxCpdgggCneX05PZBR4fiVf1bh/view?usp=sharing"
                   download="Mohammed Saad Fazal.pdf"
                   className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition animate-pulse mt-4 md:mt-0"
                 >
