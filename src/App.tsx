@@ -195,7 +195,7 @@ function App() {
                   <div className="relative group">
                     <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                     <img
-                      src="src\images\saad.png"
+                      src="../saad.png"
                       alt="Profile"
                       className="relative rounded-full w-48 h-48 md:w-64 md:h-64 object-cover mx-auto transform group-hover:scale-105 transition duration-200"
                     />
@@ -361,12 +361,6 @@ function App() {
                       key={project.title}
                       className="p-6 rounded-lg bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 min-w-[300px] snap-center dark:hover:bg-blue-900/70 hover:bg-blue-100/70"
                     >
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-40 object-cover rounded-lg mb-4"
-                        loading="lazy"
-                      />
                       <h3 className="text-xl font-semibold mb-2 dark:text-white">
                         {project.title}
                       </h3>
