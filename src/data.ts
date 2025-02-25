@@ -1,4 +1,3 @@
-
 export const skills = {
   'Programming Languages': [
     'C',
@@ -57,7 +56,7 @@ export const projects = [
   {
     title: 'Malicious URL Detection',
     description: 'Developed a machine learning model to detect malicious URLs using Python.',
-    image: '/images/mud.jpg',
+    image: 'src/images/mud.jpg',
     technologies: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'REST API'],
     features: [
       'Data Collection & Preprocessing: Gathered and cleaned a dataset of URLs.',
@@ -71,7 +70,7 @@ export const projects = [
   {
     title: 'Dice Rolling App',
     description: 'Developed a Flutter app that simulates rolling a dice.',
-    image: '/images/dice.png',
+    image: 'src/images/dice.png',
     technologies: ['Flutter'],
     features: [
       'User Interaction: Roll the dice by clicking a button.',
@@ -83,7 +82,7 @@ export const projects = [
   {
     title: 'Customer Lifetime Value Prediction',
     description: 'Developed a machine learning model to predict Customer Lifetime Value, enabling businesses to estimate future revenues.',
-    image: '/images/clv.jpg',
+    image: 'src/images/clv.jpg',
     technologies: ['Python', 'Scikit-learn', 'Pandas', 'Regression Analysis', 'Data Visualization'],
     github: 'https://github.com/MdSaad07/Customer-Lifetime-Value-Prediction',
   },
@@ -104,14 +103,14 @@ export const projects = [
   {
     title: 'Vehicle Intersection Simulation',
     description: 'Designed a web-based simulation for vehicle movement at intersections using JavaScript with traffic logic and real-time animations.',
-    image: '/images/realtime.png',
+    image: 'src/images/realtime.png',
     technologies: ['JavaScript', 'Collision Detection', 'Animation', 'Traffic Optimization'],
     github: 'https://github.com/MdSaad07/Vehicle-Intersection-Simulation',
   },
   {
     title: 'Calculator',
     description: 'Designed an intuitive user interface with HTML5 and CSS, ensuring a visually appealing and responsive layout.',
-    image: '/images/calculator.png',
+    image: 'src/images/calculator.png',
     technologies: ['HTML5', 'CSS', 'JavaScript'],
     github: 'https://github.com/MdSaad07/Calculator',
   },
@@ -125,7 +124,7 @@ export const projects = [
   {
     title: 'Starbucks Landing Page',
     description: 'Designed a modern and responsive landing page for Starbucks using HTML5 and CSS.',
-    image: '/images/starbucks.png',
+    image: 'src/images/starbucks.png',
     technologies: ['HTML5', 'CSS'],
     github: 'https://github.com/MdSaad07/Starbucks-clone',
   },
