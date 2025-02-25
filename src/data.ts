@@ -1,9 +1,3 @@
-import myClv from "./images/clv.png";
-import myMud from "./images/mud.jpg";
-import myCalci from "./images/calci.png";
-import myDice from "./images/dice.png";
-import myStar from "./images/starubcks.png";
-import myRealtime from "./images/realtime.png";
 export const skills = {
   'Programming Languages': [
     'C',
@@ -57,12 +51,11 @@ export const skills = {
   ],
 };
 
-
 export const projects = [
   {
     title: 'Malicious URL Detection',
     description: 'Developed a machine learning model to detect malicious URLs using Python.',
-    image: {myMud},
+    image: '/images/mud.jpg',
     technologies: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'REST API'],
     features: [
       'Data Collection & Preprocessing: Gathered and cleaned a dataset of URLs.',
@@ -85,63 +78,7 @@ export const projects = [
     ],
     github: 'https://github.com/MdSaad07/Dice-Roller-using-Flutter',
   },
-  {
-    title: 'Customer Lifetime Value Prediction',
-    description: 'Developed a machine learning model to predict Customer Lifetime Value, enabling businesses to estimate future revenues.',
-    image: {myClv},
-    technologies: ['Python', 'Scikit-learn', 'Pandas', 'Regression Analysis', 'Data Visualization'],
-    github: 'https://github.com/MdSaad07/Customer-Lifetime-Value-Prediction',
-  },
-  {
-    title: 'Housing Price Prediction',
-    description: 'Created a system to analyze housing market trends and predict prices using Python-based ML algorithms, achieving 93% accuracy.',
-    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=400&fit=crop',
-    technologies: ['Python', 'Machine Learning', 'Exploratory Data Analysis', 'Regression Modeling'],
-    github: 'https://github.com/MdSaad07/CodeClauseInternship_Housing-Price-Prediction',
-  },
-  {
-    title: 'Student Exam Marks Indicator Prediction',
-    description: 'Designed a model to predict student exam performance using academic and demographic factors.',
-    image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&h=400&fit=crop',
-    technologies: ['Python', 'Classification Techniques', 'Data Preprocessing', 'Data Visualization'],
-    github: 'https://github.com/MdSaad07/student-exam-performance-indicator-prediction',
-  },
-  {
-    title: 'Vehicle Intersection Simulation',
-    description: 'Designed a web-based simulation for vehicle movement at intersections using JavaScript with traffic logic and real-time animations.',
-    image: '/images/realtime.png',
-    technologies: ['JavaScript', 'Collision Detection', 'Animation', 'Traffic Optimization'],
-    github: 'https://github.com/MdSaad07/Vehicle-Intersection-Simulation',
-  },
-  {
-    title: 'Calculator',
-    description: 'Designed an intuitive user interface with HTML5 and CSS, ensuring a visually appealing and responsive layout.',
-    image: {myCalci},
-    technologies: ['HTML5', 'CSS', 'JavaScript'],
-    github: 'https://github.com/MdSaad07/Calculator',
-  },
-  {
-    title: 'Burger Kings Landing Page',
-    description: 'Developed a responsive and visually engaging landing page for Burger King using HTML5 and CSS.',
-    image: '{myBurger}',
-    technologies: ['HTML5', 'CSS'],
-    github: 'https://github.com/MdSaad07/Burger-King',
-  },
-  {
-    title: 'Starbucks Landing Page',
-    description: 'Designed a modern and responsive landing page for Starbucks using HTML5 and CSS.',
-    image: '/images/starbucks.png',
-    technologies: ['HTML5', 'CSS'],
-    github: 'https://github.com/MdSaad07/Starbucks-clone',
-  },
 ];
-
-
-// export const projects = [
-//   { name: "Malicious URL Detection", description: "Developed a machine learning model to detect malicious URLs.", link: "#" },
-//   { name: "Exam Performance Prediction", description: "Built a model to predict student exam performance using Python.", link: "#" },
-//   { name: "Mental Health Chatbot", description: "Created an NLP-based chatbot to assist users with mental health concerns.", link: "#" },
-// ];
 
 export const experience = [
   {
@@ -178,7 +115,6 @@ export const experience = [
   },
 ];
 
-
 export const education = [
   {
     degree: 'Bachelor of Technology in Computer Science',
@@ -196,7 +132,7 @@ export const education = [
       'Machine Learning for Healthcare',
       'Probability and Statistics',
       'Programming Using R',
-      'AWS'
+      'AWS',
     ],
   },
   {
@@ -204,22 +140,14 @@ export const education = [
     institution: 'The Oxford Senior Secondary School',
     duration: '2020 - 2021',
     cgpa: '85%',
-    courses: [
-      'Python Programming',
-      'SQL',
-      'HTML & CSS',
-      'Django',
-    ],
+    courses: ['Python Programming', 'SQL', 'HTML & CSS', 'Django'],
   },
   {
     degree: '10th',
     institution: 'International Indian School Dammam',
     duration: '2018 - 2019',
     cgpa: '76.6%',
-    courses: [
-    ],
-  }
-  // Add more education...
+  },
 ];
 
 export const hackathons = [
@@ -228,19 +156,17 @@ export const hackathons = [
     description: 'Built a real-time traffic management system using IoT sensors and ML',
     achievement: '1st Place Winner',
   },
-  // Add more hackathons...
 ];
 
 export const testimonials = [
   {
     name: 'Dr. Jane Smith',
     role: 'Professor, Tech University',
-    text: 'John is one of the most talented and dedicated students I have had the pleasure of teaching.',
+    text: 'Mohammed Saad Fazal is one of the most talented and dedicated students I have had the pleasure of teaching.',
   },
   {
     name: 'Alex Johnson',
     role: 'Senior Developer, Tech Corp',
-    text: 'Working with John has been incredible. His problem-solving skills and attention to detail are outstanding.',
+    text: 'Working with Mohammed Saad Fazal has been incredible. His problem-solving skills and attention to detail are outstanding.',
   },
-  // Add more testimonials...
 ];
