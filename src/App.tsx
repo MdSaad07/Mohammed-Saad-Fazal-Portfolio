@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
-import saadImage from "../src/images/saad.png"
+import saadImage from "../src/images/saad.png";
 
 import {
   Github,
   Linkedin,
   Mail,
   Phone,
+  User,
   Download,
+  BookOpen,
   // ExternalLink,
   MapPin,
   Calendar,
@@ -15,7 +17,7 @@ import {
   Award,
 } from "lucide-react";
 import { ThemeToggle } from "./components/ThemeToggle";
-import { projects, skills, experience, education } from "./data";
+import { projects, skills, experience,research, education } from "./data";
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -392,21 +394,110 @@ function App() {
                   ))}
                 </div>
                 <button
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800/50  fa-2x text-white p-2 rounded-full shadow-lg hover:bg-gray-900/70"
-        onClick={() => document.getElementById('projectSlider').scrollBy({ left: -300, behavior: 'smooth' })}
-      >
-        ◀
-      </button>
-      <button
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800/50  text-white p-2 rounded-full shadow-lg hover:bg-gray-900/70"
-        onClick={() => document.getElementById('projectSlider').scrollBy({ left: 300, behavior: 'smooth' })}
-      >
-        ▶
-      </button>
+                  className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800/50  fa-2x text-white p-2 rounded-full shadow-lg hover:bg-gray-900/70"
+                  onClick={() =>
+                    document
+                      .getElementById("projectSlider")
+                      .scrollBy({ left: -300, behavior: "smooth" })
+                  }
+                >
+                  ◀
+                </button>
+                <button
+                  className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800/50  text-white p-2 rounded-full shadow-lg hover:bg-gray-900/70"
+                  onClick={() =>
+                    document
+                      .getElementById("projectSlider")
+                      .scrollBy({ left: 300, behavior: "smooth" })
+                  }
+                >
+                  ▶
+                </button>
               </div>
-              
             </div>
           </section>
+          
+          {/* Research Section */}  
+          <section id="research" className="py-16 px-6">
+  <div className="container mx-auto max-w-4xl">
+    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent">
+      Research & Publications
+    </h2>
+    <div className="space-y-8">
+      {research.map((project, index) => (
+        <div
+          key={project.title}
+          className="p-6 rounded-lg bg-white/50 hover:bg-green-100/70 dark:text-green-300 dark:bg-gray-800/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+          style={{ animationDelay: `${index * 100}ms` }}
+        >
+          <div className="flex items-start gap-4">
+            <div className="p-3 rounded-full bg-green-100 dark:bg-green-900/70">
+              <BookOpen className="text-green-600 dark:text-green-100" size={24} />
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl font-semibold">{project.title}</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-2">{project.field}</p>
+              <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-4">
+                <Calendar size={16} className="mr-2" />
+                {project.year}
+              </div>
+              <ul className="space-y-2">
+                {project.highlights.map((highlight, i) => (
+                  <li key={i} className="flex items-start">
+                    <span className="mr-2 text-green-600 dark:text-green-400">•</span>
+                    {highlight}
+                  </li>
+                ))}
+              </ul>
+              {/* Contributors Section */}
+              {project.contributors && project.contributors.length > 0 && (
+                <div className="mt-4">
+                  <h4 className="text-lg font-semibold text-green-700 dark:text-green-400">Contributors:</h4>
+                  <ul className="space-y-1">
+                    {project.contributors.map((contributor, i) => (
+                      <li key={i} className="flex items-center text-sm text-gray-700 dark:text-gray-300">
+                        <User size={16} className="mr-2 text-green-500 dark:text-green-300" />
+                        <a href={contributor.email} className="hover:underline text-green-600 dark:text-green-400">
+                          {contributor.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {/* Research Paper Link */}
+              {project.link && (
+                <div className="mt-4">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-600 dark:text-green-400 hover:underline"
+                  >
+                    View Research Paper
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+    {/* Collaboration Invitation Section */}
+    <div className="mt-12 text-center">
+      <p className="text-lg text-gray-800 dark:text-gray-300">
+        If you would like to collaborate on a research project, please feel free to{' '}
+        <a
+          href="mailto:mdsaad7803@gmail.com"
+          className="text-green-600 dark:text-green-400 font-semibold hover:underline"
+        >
+          contact me
+        </a>.
+      </p>
+    </div>
+  </div>
+</section>
+
 
           {/* <section
             id="testimonials"

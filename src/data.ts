@@ -44,15 +44,44 @@ export const skills = {
   ],
   'Deployment, Cloud & Version Control': [
     'Amazon Web Services (AWS)',
+    'Amazon EC2',
+    'AWS Lambda',
+    'Amazon S3',
+    'Amazon RDS',
+    'Amazon VPC',
+    'AWS IAM',
+    'AWS CloudFront',
+    'Amazon CloudWatch',
     'NPM',
-  ],
+],
   'Machine Learning & Libraries': [
     'Scikit-learn',
-  ],
+    'TensorFlow',
+    'Keras',
+    'PyTorch',
+    'OpenCV',
+    'NLTK',
+    'SpaCy',
+    'Pandas',
+    'NumPy',
+],
 };
 
 
 export const projects = [
+  {
+    title: 'Silent Care (Ongoing)',
+    description: 'Developing a chatbot system to assist individuals with speech and hearing impairments using NLP and audio processing.',
+    technologies: ['Python', 'NLP', 'TensorFlow', 'Speech-to-Text', 'Text-to-Speech', 'Flask', 'BERT','OpenCV'],
+    features: [
+      'Speech & Text Processing: Converts speech to text and vice versa for seamless communication.',
+      'Emotion Recognition: Detects user emotions through text and voice input.',
+      'AI-Powered Chatbot: Provides intelligent responses tailored for users with impairments.',
+      'Multilingual Support: Supports multiple languages for broader accessibility.',
+      'Web & Mobile Integration: Designed to work on both web and mobile platforms.',
+    ],
+    github: 'https://github.com/MdSaad07/Silent-Care',
+  },
   {
     title: 'Malicious URL Detection',
     description: 'Developed a machine learning model to detect malicious URLs using Python.',
@@ -65,17 +94,6 @@ export const projects = [
       'Evaluating the URL: Used REST APIs to categorize URLs.',
     ],
     github: 'https://github.com/MdSaad07/Malicious-URL-detection',
-  },
-  {
-    title: 'Dice Rolling App',
-    description: 'Developed a Flutter app that simulates rolling a dice.',
-    technologies: ['Flutter'],
-    features: [
-      'User Interaction: Roll the dice by clicking a button.',
-      'Randomization: Generates a random number to display a dice face.',
-      'User Interface: Clean and simple design with smooth animations.',
-    ],
-    github: 'https://github.com/MdSaad07/Dice-Roller-using-Flutter',
   },
   {
     title: 'Customer Lifetime Value Prediction',
@@ -95,6 +113,66 @@ export const projects = [
     technologies: ['Python', 'Classification Techniques', 'Data Preprocessing', 'Data Visualization'],
     github: 'https://github.com/MdSaad07/student-exam-performance-indicator-prediction',
   },
+  {
+    title: 'Rabin-Karp Algorithm Implementation 🔍',
+    description: 'A React.js implementation of the Rabin-Karp Algorithm for pattern matching, intrusion detection, and plagiarism checking. The application provides a simple UI to input text and patterns, executing the Rabin-Karp algorithm for efficient string searching.',
+    technologies: ['React.js', 'JavaScript'],
+    features: [
+      'Pattern Matching: Find occurrences of a pattern in a given text using the Rabin-Karp algorithm.',
+      'Intrusion Detection: Detect suspicious patterns in a given text, useful for security applications.',
+      'Plagiarism Check: Identify matching text fragments to check for possible plagiarism.',
+    ],
+    github: 'https://github.com/MdSaad07/Rabin-Karp-Algorithm', // Add the GitHub link if available
+  },
+  {
+    title: 'Pass 1 Assembler Simulation',
+    description: 'A web-based tool that simulates the first pass of an assembler, processing assembly code and generating symbol tables.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Node.js', 'Express.js', 'Multer'],
+    features: [
+      'Upload Operational Table and Input Assembly File.',
+      'Process the files and generate Symbol Table.',
+      'Interactive UI with Bootstrap styling.',
+      'Backend processing using Node.js & Express.',
+    ],
+    github: 'https://github.com/MdSaad07/Pass1_Assembler', // Add the GitHub link if available
+  },
+  {
+    title: 'Dicee Game',
+    description: 'A simple web-based dice game where two players roll dice, and the higher roll wins. Refresh the page to roll the dice again.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    features: [
+      'Two-player dice rolling game.',
+      'Randomized dice rolls on refresh.',
+      'Simple and clean UI.',
+    ],
+    github: 'https://github.com/MdSaad07/The-Dice-Game', // Add the GitHub link if available
+  },
+  {
+    title: 'Drum Kit 🥁',
+    description: 'A simple and interactive Drum Kit web application that allows users to play drum sounds by clicking on buttons or pressing corresponding keys on the keyboard.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    features: [
+      'Responsive and interactive drum buttons.',
+      'Play drum sounds by clicking buttons.',
+      'Play drum sounds using keyboard keys.',
+      'Simple and clean user interface.',
+      'Smooth animations when keys or buttons are pressed.',
+    ],
+    github: 'https://github.com/MdSaad07/Drum-Kit', // Add the GitHub link if available
+  },
+  
+  {
+    title: 'Dice Rolling App',
+    description: 'Developed a Flutter app that simulates rolling a dice.',
+    technologies: ['Flutter'],
+    features: [
+      'User Interaction: Roll the dice by clicking a button.',
+      'Randomization: Generates a random number to display a dice face.',
+      'User Interface: Clean and simple design with smooth animations.',
+    ],
+    github: 'https://github.com/MdSaad07/Dice-Roller-using-Flutter',
+  },
+  
   {
     title: 'Vehicle Intersection Simulation',
     description: 'Designed a web-based simulation for vehicle movement at intersections using JavaScript with traffic logic and real-time animations.',
@@ -229,3 +307,58 @@ export const testimonials = [
   },
   // Add more testimonials...
 ];
+
+export const research = [
+  {
+    title: 'Silent Care (Ongoing)',
+    field: 'Assistive Technology & AI',
+    year: '2025',
+    highlights: [
+      'Developing a communication system for individuals with speech and hearing impairments.',
+      'Integrating AI-powered sign language recognition and text-to-speech conversion.',
+      'Aiming to enhance accessibility and real-time communication through deep learning and NLP.',
+    ],
+    contributors: [  // ✅ FIXED from contributor to contributors
+      {
+        name: 'Mohammed Armaan Khan',
+        email: 'mailto:iamarmaan312@gmail.com',
+      },
+      {
+        name: 'Mohammed Fauzaan Zaki Meccai',
+        email: 'mailto:fauzaan269@gmail.com',
+      },
+      {
+        name: 'Mohammed Kaifulla Kazim',
+        email: 'mailto:kaifullakazim@gmail.com',
+      },
+      {
+        name: 'Mohammed Saad Fazal',
+        email: 'mailto:mdsaad7803@gmail.com',
+      },
+    ],
+    link: '',
+  },
+  {
+    title: 'Emergency Clearance System (Ongoing)',
+    field: 'Smart Traffic Management & IoT',
+    year: '2025',
+    highlights: [
+      'Building an AI-driven system to optimize emergency vehicle movement in urban traffic.',
+      'Using computer vision and IoT-enabled traffic signals for dynamic route clearance.',
+      'Implementing real-time monitoring to reduce emergency response time significantly.',
+    ],
+    contributors: [  // ✅ FIXED from contributor to contributors
+      {
+        name: 'Mohammed Kaifulla Kazim',
+        email: 'mailto:kaifullakazim@gmail.com',
+      },
+      {
+        name: 'Mohammed Saad Fazal',
+        email: 'mailto:mdsaad7803@gmail.com',
+      },
+    ],
+    link: '',
+  },
+];
+
+
