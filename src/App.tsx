@@ -164,7 +164,7 @@ function App() {
                       />
                     </a>
                     <a
-                      href="www.linkedin.com/in/msaadf"
+                      href="https://linkedin.com/in/msaadf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors dark:text-white dark:hover:text-blue-400 dark:hover:animate-bounce hover:animate-bounce"
@@ -580,7 +580,7 @@ function App() {
                         <Github size={24} />
                       </a>
                       <a
-                        href="www.linkedin.com/in/msaadf"
+                        href="https://linkedin.com/in/msaadf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-2 rounded-full dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
