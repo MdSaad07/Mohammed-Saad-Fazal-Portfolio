@@ -206,7 +206,20 @@ export const projects = [
 //   { name: "Mental Health Chatbot", description: "Created an NLP-based chatbot to assist users with mental health concerns.", link: "#" },
 // ];
 
-export const experience = [
+export const experience = [{
+  role: 'Software Developer Intern',
+  company: 'ThamZeal International LLP (in collaboration with XyberAI LLC, USA)',
+  location: 'Remote',
+  duration: 'March 2025 - Present',
+  achievements: [
+    'Develop and maintain scalable backend systems using Node.js and Express.js, including RESTful API development.',
+    'Deploy backend services and manage version control workflows using Git for continuous integration and delivery.',
+    'Contribute to and build dynamic, responsive frontend interfaces using React.js.',
+    'Implement AI-driven functionalities using Python, focusing on optimal model selection for machine learning solutions.',
+    'Collaborate with international cross-functional teams to deliver intelligent digital platforms across cloud automation, social media, and cybersecurity.',
+    'Gain hands-on experience in full-stack development and real-world AI integration within a performance-driven, remote environment.',
+  ],
+},
   {
     role: 'Data Science Intern',
     company: 'CodeClause',
@@ -247,7 +260,7 @@ export const education = [
     degree: 'Bachelor of Technology in Computer Science',
     institution: 'Dayananda Sagar University',
     duration: '2021 - 2025',
-    cgpa: '7.14/10',
+    cgpa: '7.18/10',
     courses: [
       'Data Structures',
       'Software Engineering and Project Management',
