@@ -54,6 +54,7 @@ export const skills = {
     'AWS IAM',
     'AWS CloudFront',
     'Amazon CloudWatch',
+    'Terraform',
     'NPM',
     'Docker',
     'Kubernetes',
