@@ -206,6 +206,7 @@ export const projects = [
 //   { name: "Mental Health Chatbot", description: "Created an NLP-based chatbot to assist users with mental health concerns.", link: "#" },
 // ];
 
+
 export const experience = [{
   role: 'Software Developer Intern',
   company: 'ThamZeal International LLP (in collaboration with XyberAI LLC, USA)',
@@ -375,3 +376,63 @@ export const research = [
 ];
 
 
+export const certifications = [
+  {
+    title: 'AWS Academy Graduate - AWS Academy Cloud Operations',
+    description: 'AWS Academy Graduate certification for Cloud Operations issued by Amazon Web Services.',
+    skills: ['Amazon Web Services (AWS)', 'Cloud Operations'],
+    issuer: 'Amazon Web Services Training and Certification',
+    issued: 'Apr 2025',
+    link: 'https://www.credly.com/badges/d56270d0-764d-44ae-93ce-20f1e51fd099/linked_in_profile', // Link to the certificate
+  },
+  {
+    title: 'Terraform for AWS - Beginner to Expert',
+    description: 'Certification for mastering Terraform for AWS, issued by Udemy.',
+    skills: ['Amazon Web Services (AWS)', 'Terraform'],
+    issuer: 'Udemy',
+    issued: 'Apr 2025',
+    link: 'https://www.udemy.com/certificate/UC-37fbdb29-c170-4c37-9dea-ac6baadeeb02/', // Link to the certificate
+  },
+  {
+    title: 'AWS Academy Graduate - AWS Academy Cloud Foundations',
+    description: 'AWS Academy Graduate certification for Cloud Foundations issued by Amazon Web Services.',
+    skills: ['Amazon Web Services (AWS)', 'Cloud Computing'],
+    issuer: 'Amazon Web Services Training and Certification',
+    issued: 'Dec 2024',
+    link: 'https://www.credly.com/badges/7c2297f2-cbd3-4730-a481-ae89e646d640/print', // Link to the certificate
+  },
+  {
+    title: 'Docker Essentials: A Developer Introduction',
+    description: 'Introduction to Docker Essentials certification issued by IBM.',
+    skills: ['Docker', 'Cloud Computing'],
+    issuer: 'IBM',
+    issued: 'Dec 2024',
+    credentialID: 'ac1ed362b6964ad48be71cec8ec0d5c0',
+    link: 'https://www.credly.com/badges/71a169a6-10db-4140-9c12-fa847a75328e', // Link to the certificate
+  },
+  {
+    title: 'Microsoft Power BI Desktop for Business Intelligence',
+    description: 'Microsoft Power BI Desktop certification issued by Udemy for Business Intelligence.',
+    skills: ['Microsoft Power BI'],
+    issuer: 'Udemy',
+    issued: 'Nov 2024',
+    credentialID: 'UC-7a68eef7-99f7-49e2-ac02-387b4c88ac75',
+    link: 'https://www.udemy.com/certificate/UC-7a68eef7-99f7-49e2-ac02-387b4c88ac75/', // Link to the certificate
+  },
+  {
+    title: 'Introduction to R',
+    description: 'Introduction to R certification issued by Infosys Springboard.',
+    skills: ['R (Programming Language)'],
+    issuer: 'Infosys Springboard',
+    issued: 'Nov 2016',
+    link: 'https://drive.google.com/file/d/1Kld6OvHjpHJ0_Q9p8Ctfxlq45f3hk1mc/view', // Link to the certificate
+  },
+  {
+    title: 'Statistics for R Programming',
+    description: 'Certification in Statistics for R Programming issued by Infosys Springboard.',
+    skills: ['R (Programming Language)'],
+    issuer: 'Infosys Springboard',
+    issued: 'Nov 2016',
+    link: 'https://drive.google.com/file/d/1SeX9ySJKqiD1WXDqfS6SmDe1Tf6g_688/view', // Link to the certificate
+  },
+];

@@ -17,7 +17,7 @@ import {
   Award,
 } from "lucide-react";
 import { ThemeToggle } from "./components/ThemeToggle";
-import { projects, skills, experience,research, education } from "./data";
+import { projects, skills, experience,research, education,certifications } from "./data";
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -112,14 +112,21 @@ function App() {
                   Projects
                 </a>
                 <a
+                  href="#certifications"
+                  className="block mt-4 md:mt-0 hover:text-blue-400 dark:text-white dark:hover:text-blue-400 transition-colors font-mono"
+                >
+                  Certifications
+                </a>
+                <a
                   href="#contact"
                   className="block mt-4 md:mt-0 hover:text-blue-400 dark:text-white dark:hover:text-blue-400 transition-colors font-mono"
                 >
                   Contact
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/18yuLNcXgLpcih5EW-2kYJd7gA-k7JhZd/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1nFGekPfwPBprujwNv0ZUtVHRNGnvf1jA/view?usp=sharing"
                   download="Mohammed Saad Fazal.pdf"
+                  target="_blank"
                   className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition animate-pulse mt-4 md:mt-0"
                 >
                   <Download className="mr-2" size={20} />
@@ -416,6 +423,83 @@ function App() {
               </div>
             </div>
           </section>
+          <section
+  id="certifications"
+  className="py-16 px-6 bg-white/30 dark:bg-gray-800/30 backdrop-blur-sm"
+>
+  <div className="container mx-auto max-w-4xl">
+    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+      Certifications
+    </h2>
+    <div className="relative overflow-hidden">
+      <div
+        className="flex space-x-6 overflow-x-scroll scrollbar-hide snap-x"
+        id="certificationSlider"
+      >
+        {certifications.map((certification) => (
+          <div
+            key={certification.title}
+            className="p-6 rounded-lg bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 min-w-[300px] snap-center dark:hover:bg-blue-900/70 hover:bg-blue-100/70"
+          >
+            <h3 className="text-xl font-semibold mb-2 dark:text-white">
+              {certification.title}
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300 mb-4">
+              {certification.description}
+            </p>
+            <p className="text-gray-700 dark:text-gray-300 mb-4"><span style={{fontWeight:"bold"}}>
+              {certification.issuer}</span>
+              <br></br> 
+              <span style={{fontWeight:"500"}}>Issued:</span> {certification.issued}
+            </p>
+                       
+            <div className="flex flex-wrap gap-2 mb-4">
+              {certification.skills.map((skill) => (
+                <span
+                  key={skill}
+                  className="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-600/70 hover:bg-blue-600/70 text-blue-800 dark:text-blue-100 hover:scale-105 transition-transform"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+            <div className="flex gap-4">
+              <a
+                href={certification.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                View Certificate
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+      <button
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800/50 fa-2x text-white p-2 rounded-full shadow-lg hover:bg-gray-900/70"
+        onClick={() =>
+          document
+            .getElementById("certificationSlider")
+            .scrollBy({ left: -300, behavior: "smooth" })
+        }
+      >
+        ◀
+      </button>
+      <button
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full shadow-lg hover:bg-gray-900/70"
+        onClick={() =>
+          document
+            .getElementById("certificationSlider")
+            .scrollBy({ left: 300, behavior: "smooth" })
+        }
+      >
+        ▶
+      </button>
+    </div>
+  </div>
+</section>
+
           
           {/* Research Section */}  
           <section id="research" className="py-16 px-6">
