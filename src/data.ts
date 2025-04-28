@@ -10,6 +10,7 @@ export const skills = {
   ],
   'Frameworks & Databases': [
     'Flask',
+    'Express.js',
     'Node.js',
     'React.js',
     'React Router',
@@ -37,10 +38,11 @@ export const skills = {
     'PowerShell',
     'Filmora',
     'Adobe Photoshop',
+    'VS Code',
   ],
   'Operating Systems & Infrastructure': [
     'Linux',
-    'Arduino',
+    'Arduino'
   ],
   'Deployment, Cloud & Version Control': [
     'Amazon Web Services (AWS)',
@@ -53,7 +55,9 @@ export const skills = {
     'AWS CloudFront',
     'Amazon CloudWatch',
     'NPM',
-],
+    'Docker',
+    'Kubernetes',
+  ],
   'Machine Learning & Libraries': [
     'Scikit-learn',
     'TensorFlow',
@@ -64,8 +68,12 @@ export const skills = {
     'SpaCy',
     'Pandas',
     'NumPy',
-],
+    'Matplotlib',
+    'Seaborn',
+    'XGBoost',
+  ],
 };
+
 
 
 export const projects = [
