@@ -217,7 +217,7 @@ export const projects = [
 
 
 export const experience = [{
-  role: 'Software Developer Intern',
+  role: 'Software Engineer Intern',
   company: 'ThamZeal International LLP (in collaboration with XyberAI LLC, USA)',
   location: 'Remote',
   duration: 'March 2025 - Present',
@@ -343,6 +343,10 @@ export const research = [
     ],
     contributors: [  // ✅ FIXED from contributor to contributors
       {
+        name: 'Dr. Naresh P.',
+        email: 'mailto:naresh-cse@dsu.edu.in',
+      },
+      {
         name: 'Mohammed Armaan Khan',
         email: 'mailto:iamarmaan312@gmail.com',
       },
@@ -372,6 +376,10 @@ export const research = [
     ],
     contributors: [  // ✅ FIXED from contributor to contributors
       {
+        name: 'Dr. Ghousia Thaniyat',
+        email: 'mailto:naresh-cse@dsu.edu.in',
+      },
+      {
         name: 'Mohammed Kaifulla Kazim',
         email: 'mailto:kaifullakazim@gmail.com',
       },
@@ -385,7 +393,15 @@ export const research = [
 ];
 
 
-export const certifications = [
+export const certifications = [{
+  title: 'Certified Agile Scrum Master',
+  description: 'Certified Agile Scrum Master certification issued by the Council of Human Resource Development, Saudi Arabia.',
+  skills: ['Agile Methodology', 'Scrum', 'Project Management'],
+  issuer: 'Council of Human Resource Development, Saudi Arabia',
+  issued: 'April 2025',
+  link: 'https://www.hrduniversity.org/certificates/ah1w9wkuqb', // Link to the certification
+}
+,
   {
     title: 'AWS Academy Graduate - AWS Academy Cloud Operations',
     description: 'AWS Academy Graduate certification for Cloud Operations issued by Amazon Web Services.',

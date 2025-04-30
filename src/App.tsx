@@ -152,11 +152,10 @@ function App() {
                     Hi, I'm Mohammed Saad Fazal
                   </h1>
                   <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
-                    Full Stack Developer and Data Science enthusiast passionate
-                    about building innovative, scalable solutions. Experienced
-                    in AI, cloud technologies, and data-driven decision-making,
-                    with a strong focus on problem-solving and optimizing user
-                    experiences.
+                  Passionate about developing innovative and scalable solutions that drive real-world impact.
+                  Experienced in AI, cloud technologies, and data-driven decision-making, with a strong focus
+                  on problem-solving, agile practices, and optimizing user experiences. Skilled at integrating
+                  back-end efficiency with front-end usability to deliver robust, user-centric applications
                   </p>
                   <div className="flex space-x-4">
                     <a
